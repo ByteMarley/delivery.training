@@ -29,6 +29,8 @@
 <button id="cpButton">CompletePayment</button>
   
 <button id="ebButton">Event Builder Testing Button</button>
+	
+<button id="sfButton">Search Form Button</button>
 <H2>Redirect</H2>
 <a href="./GTM.html">Go to GOOGLE TAG MANAGER SETUP</a>
 <script type="text/javascript">
@@ -59,13 +61,15 @@ document.getElementById("cpButton").onclick = function(){
 
 </script>
 document.getElementById("ebButton").onclick = function(){
-    ttq.identify({
-    email: document.getElementById("emailInput").value,
-})
     ttq.track('InitiateCheckout')
  }
 </script>
 
+</script>
+document.getElementById("sfButton").onclick = function(){
+    ttq.track('SearchForm')
+ }
+</script>
 	
 <HR>
 
