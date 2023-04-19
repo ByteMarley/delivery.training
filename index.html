@@ -57,6 +57,16 @@ document.getElementById("cpButton").onclick = function(){
  }
 </script>
 
+</script>
+document.getElementById("ebButton").onclick = function(){
+    ttq.identify({
+    email: document.getElementById("emailInput").value,
+})
+    ttq.track('InitiateCheckout')
+ }
+</script>
+
+	
 <HR>
 
 </BODY>
